@@ -75,11 +75,35 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // ── 2. Header Scroll State & Mobile Drawer ───────────────────────────────
+  // ── 2. Header Scroll State, Active Nav Highlight & Mobile Drawer ─────────
   const header = document.getElementById('siteHeader');
-  window.addEventListener('scroll', () => {
+  const navLinks = [...document.querySelectorAll('.nav-pill .nav-link')];
+  const observedSections = navLinks
+    .map((link) => ({
+      link,
+      section: document.querySelector(link.getAttribute('href'))
+    }))
+    .filter((entry) => entry.section);
+
+  function updateActiveNav() {
     if (header) header.classList.toggle('scrolled', window.scrollY > 36);
-  }, { passive: true });
+    const probeY = window.scrollY + window.innerHeight * 0.32;
+    let current = null;
+    for (const entry of observedSections) {
+      const top = entry.section.offsetTop;
+      const bottom = top + entry.section.offsetHeight;
+      if (probeY >= top && probeY < bottom) {
+        current = entry;
+        break;
+      }
+    }
+    observedSections.forEach((entry) => {
+      entry.link.classList.toggle('active', entry === current);
+    });
+  }
+
+  window.addEventListener('scroll', updateActiveNav, { passive: true });
+  updateActiveNav();
 
   const mobileDrawer = document.getElementById('mobileDrawer');
   const hamburgerBtn = document.getElementById('hamburgerBtn');
