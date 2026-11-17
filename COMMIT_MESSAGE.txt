@@ -1,0 +1,10 @@
+feat(website): Fliesen Theo Galuschka - Immersive 3D Studio Edition
+
+Design: Bespoke Limestone/Travertine/Obsidian 3D Scrollytelling Studio
+Stack: HTML5, CSS3, Three.js (v0.160.0), GSAP + ScrollTrigger (v3.12.5), Lenis (v1.1.18)
+- Procedural 3D architectural walk-in cutaway with physical 2x2 XXL slabs, 1.5mm recessed grout channels, Sobel NormalMap, and live PBR material switching (Travertin, Basalt, Calacatta, Cotto)
+- 4-layer DIN 18534 exploding assembly synced to GSAP ticker with Visibility Culling & mobile touch safety
+- Side-by-side DIN 18534 Rohbau to Meisterbad process stage & Obsidian gallery
+- Ingolstadt m2 Fliesen- & Bad-Kalkulator + 3-step inquiry funnel
+- 8-pillar website-audit-pro 100% GREEN: § 5 DDG Impressum, DSGVO Art. 13, TDDDG Consent, Two-Click Maps (data-src), local WOFF2 fonts, SVG favicon
+- Verified across 5 Cook rounds with headless Chrome WebGL renders & fresh-context dual critics

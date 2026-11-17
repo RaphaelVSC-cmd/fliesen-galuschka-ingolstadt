@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="tgGold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#D4B483"/>
+      <stop offset="100%" stop-color="#8D6B40"/>
+    </linearGradient>
+    <linearGradient id="tgDark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#222523"/>
+      <stop offset="100%" stop-color="#141615"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#tgDark)"/>
+  <rect x="8" y="8" width="22" height="22" rx="3" fill="none" stroke="url(#tgGold)" stroke-width="2.2"/>
+  <rect x="34" y="8" width="22" height="22" rx="3" fill="url(#tgGold)" opacity="0.92"/>
+  <rect x="8" y="34" width="22" height="22" rx="3" fill="url(#tgGold)" opacity="0.28" stroke="url(#tgGold)" stroke-width="1.6"/>
+  <rect x="34" y="34" width="22" height="22" rx="3" fill="none" stroke="#F6F4EF" stroke-width="2" opacity="0.85"/>
+  <path d="M13 15 H25 M19 15 V25" stroke="#F6F4EF" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M51 41 C46 41 42 44 42 48 C42 52 46 53 50 51 V47 H46" fill="none" stroke="#F6F4EF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
